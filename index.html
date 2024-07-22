@@ -20,9 +20,9 @@
         }
 
         .header img {
-            max-width: 100px; /* Ajuste o tamanho conforme necessário */
+            max-width: 100px;
             display: block;
-            margin: 0 auto 10px; /* Centralizar a imagem e adicionar espaço abaixo dela */
+            margin: 0 auto 10px;
         }
 
         .menu-section {
@@ -47,6 +47,16 @@
         
         .nav-pills .nav-link.active {
             background-color: #ff99cc;
+        }
+
+        .footer {
+            background-color: #ff99cc;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
 
         @media (max-width: 768px) {
@@ -90,20 +100,90 @@
         <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-bolos" role="tabpanel" aria-labelledby="pills-bolos-tab">
                 <div class="menu-section">
-                    <div class="menu-item d-flex justify-content-between align-items-center row">
-                        <div class="col-md-8">
-                            <h3>Bolo de Chocolate</h3>
-                            <p>Delicioso bolo de chocolate com cobertura cremosa.</p>
-                        </div>
-                        <div class="col-md-4 text-right price">R$ 25,00</div>
-                    </div>
-                    <div class="menu-item d-flex justify-content-between align-items-center row">
-                        <div class="col-md-8">
-                            <h3>Bolo de Morango</h3>
-                            <p>Bolo de morango fresquinho com chantilly.</p>
-                        </div>
-                        <div class="col-md-4 text-right price">R$ 30,00</div>
-                    </div>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Sabores</th>
+                                <th>200G</th>
+                                <th>600G</th>
+                                <th>1KG</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Baunilha</td>
+                                <td>R$ 8,00</td>
+                                <td>R$ 20,00</td>
+                                <td>R$ 30,00</td>
+                            </tr>
+                            <tr>
+                                <td>Cenoura</td>
+                                <td>R$ 8,00</td>
+                                <td>R$ 20,00</td>
+                                <td>R$ 30,00</td>
+                            </tr>
+                            <tr>
+                                <td>Cenoura (Zero Lactose)</td>
+                                <td>R$ 8,00</td>
+                                <td>R$ 20,00</td>
+                                <td>R$ 30,00</td>
+                            </tr>
+                            <tr>
+                                <td>Chocolate</td>
+                                <td>R$ 8,00</td>
+                                <td>R$ 20,00</td>
+                                <td>R$ 30,00</td>
+                            </tr>
+                            <tr>
+                                <td>Formigueiro</td>
+                                <td>R$ 8,00</td>
+                                <td>R$ 20,00</td>
+                                <td>R$ 30,00</td>
+                            </tr>
+                            <tr>
+                                <td>Fubá</td>
+                                <td>R$ 8,00</td>
+                                <td>R$ 20,00</td>
+                                <td>R$ 30,00</td>
+                            </tr>
+                            <tr>
+                                <td>Laranja</td>
+                                <td>R$ 8,00</td>
+                                <td>R$ 20,00</td>
+                                <td>R$ 30,00</td>
+                            </tr>
+                            <tr>
+                                <td>Limão</td>
+                                <td>R$ 8,00</td>
+                                <td>R$ 20,00</td>
+                                <td>R$ 30,00</td>
+                            </tr>
+                            <tr>
+                                <td>Mesclado</td>
+                                <td>R$ 8,00</td>
+                                <td>R$ 20,00</td>
+                                <td>R$ 30,00</td>
+                            </tr>
+                            <tr>
+                                <td>Banana</td>
+                                <td>R$ 13,00</td>
+                                <td>R$ 30,00</td>
+                                <td>R$ 40,00</td>
+                            </tr>
+                            <tr>
+                                <td>Cenoura Gota Chocolate</td>
+                                <td>R$ 13,00</td>
+                                <td>R$ 26,00</td>
+                                <td>R$ 40,00</td>
+                            </tr>
+                            <tr>
+                                <td>Coco</td>
+                                <td>R$ 13,00</td>
+                                <td>R$ 30,00</td>
+                                <td>R$ 40,00</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
             <div class="tab-pane fade" id="pills-doces" role="tabpanel" aria-labelledby="pills-doces-tab">
@@ -161,6 +241,10 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="footer">
+        <p>Instagram: <a href="https://www.instagram.com/sweetshopconfeitaria" target="_blank" style="color: white; text-decoration: none;">@sweetshopconfeitaria</a></p>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
